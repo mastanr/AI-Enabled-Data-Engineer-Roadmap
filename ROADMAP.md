@@ -1,219 +1,192 @@
-# Full Roadmap
+# Roadmap
 
-## Phase 0 - Setup
+## Phase 0 — Setup
 
-### Learn
-- Install Python
-- Install VS Code
-- Install Git
-- Create GitHub repo
-- Learn virtual environments
-- Install Jupyter Notebook
+Goal: Prepare your laptop and learning environment.
 
-### Practice
-- Create a simple Python file
-- Create a notebook
-- Push first commit to GitHub
+Learn:
+- Git and GitHub basics
+- VS Code
+- Python installation
+- Jupyter notebooks
+- Conda or virtual environments
+- Azure free account basics
+- Databricks Free Edition or workspace access
+
+Output:
+- A working Python notebook
+- A GitHub repo
+- One simple `hello_world.ipynb`
 
 ---
 
-## Phase 1 - Python for Data Engineering and AI
+## Phase 1 — Python for Data
 
-### Topics
-- Variables and data types
-- Lists, tuples, sets, dictionaries
-- If conditions
+Goal: Become comfortable writing Python for data tasks.
+
+Learn:
+- Variables
+- Lists
+- Dictionaries
 - Loops
 - Functions
-- File handling
+- Files
 - Error handling
-- pandas basics
 - NumPy basics
+- pandas basics
 
-### Practical Examples
-- Read a CSV file
-- Clean null values
-- Filter records
-- Group data by category
-- Export clean data to CSV
-
-### Connect to Data Engineering
-- Python is used in Databricks notebooks
-- pandas helps understand tabular data
-- dictionaries help with JSON data
-- loops help process files dynamically
+Practice:
+- Read a CSV
+- Clean columns
+- Filter rows
+- Group data
+- Join two DataFrames
+- Write output to CSV/Parquet
 
 ---
 
-## Phase 2 - SQL and Data Engineering Foundation
+## Phase 2 — SQL + Data Engineering
 
-### Topics
+Goal: Strengthen your core Data Engineering foundation.
+
+Learn:
 - SELECT, WHERE, GROUP BY
-- INNER JOIN / LEFT JOIN
+- JOINs
 - CTEs
 - Window functions
 - Stored procedures
 - Incremental load
 - Watermark logic
+- Stage-to-final merge
 - Data quality checks
-- Medallion architecture
 
-### Practical Examples
-- Build staging table
-- Deduplicate records
-- Create silver table
-- Create gold aggregation table
-- Build data quality validation query
+Practice:
+- Build a small source-to-stage-to-final pipeline
+- Create audit logging table
+- Write row count validation
+- Add duplicate detection
 
 ---
 
-## Phase 3 - Math and Statistics for AI
+## Phase 3 — Math + Statistics for AI
 
-### Discrete Math Topics
+Goal: Learn only the math needed to understand ML and AI.
+
+Learn:
 - Boolean logic
-- Truth tables
 - Sets
-- Relations
 - Functions
-- Graph basics
-
-### Statistics Topics
+- Relations
+- Basic probability
 - Mean, median, mode
 - Variance and standard deviation
-- Probability
-- Distributions
 - Correlation
-- Hypothesis testing basics
+- Normal distribution
+- Confusion matrix
+- Precision and recall
 
-### Practical Connection
-- Boolean logic = SQL WHERE conditions
-- Sets = SQL joins and matching
-- Functions = transformations
-- Probability = ML prediction thinking
-- Variance = model and data spread
+Practice:
+- Explain each concept using SQL and Python examples
+- Create small notebooks for probability, variance, and classification metrics
 
 ---
 
-## Phase 4 - Machine Learning Basics
+## Phase 4 — Machine Learning Basics
 
-### Topics
-- What is ML?
+Goal: Understand the ML lifecycle.
+
+Learn:
 - Supervised learning
-- Unsupervised learning
 - Regression
 - Classification
 - Train/test split
-- Overfitting and underfitting
+- Overfitting
 - Model evaluation
-- Confusion matrix
-- Precision and recall
 - Feature engineering
+- Pipelines
 
-### Tools
-- pandas
-- NumPy
-- scikit-learn
-- matplotlib
-
-### Practice Projects
-- Predict house price
-- Classify customer churn
-- Predict delivery delay
-- Detect abnormal transaction amount
+Practice:
+- Build a house price prediction model
+- Build a customer churn classification model
+- Evaluate accuracy, precision, recall, and F1 score
 
 ---
 
-## Phase 5 - Azure Databricks and MLflow
+## Phase 5 — Azure Databricks + MLflow
 
-### Topics
-- Databricks notebooks
+Goal: Connect Data Engineering to ML production thinking.
+
+Learn:
 - Spark DataFrames
 - Delta Lake
-- Feature engineering with Spark
-- MLflow experiment tracking
-- Model registry basics
+- Medallion architecture
+- Databricks notebooks
+- MLflow tracking
+- Model registry
 - Batch inference
-- Model output tables
+- Model monitoring basics
 
-### Data Engineer View
-A Data Engineer does not always build complex ML models, but must know how to prepare, run, monitor, and operationalize ML workflows.
+Practice:
+- Build Raw → Bronze → Silver → Gold pipeline
+- Train a simple model from Gold data
+- Track experiment in MLflow
+- Save predictions back to Delta table
 
 ---
 
-## Phase 6 - GenAI and RAG
+## Phase 6 — GenAI + RAG
 
-### Topics
+Goal: Build AI apps that answer questions from your own data.
+
+Learn:
 - LLM basics
-- Prompt engineering
+- Prompting
 - Embeddings
-- Vector search
 - Chunking
-- Retrieval-Augmented Generation
-- RAG evaluation
-- Guardrails
-- Responsible AI
-
-### Simple RAG Flow
-
-```text
-Documents
-→ Chunk text
-→ Create embeddings
-→ Store in vector DB
-→ User asks question
-→ Retrieve relevant chunks
-→ LLM generates answer
-```
-
----
-
-## Phase 7 - Agentic AI
-
-### Topics
-- What is an AI agent?
-- Tools and actions
-- Memory
-- Planning
-- Tool calling
-- Workflow orchestration
-- Observability
-- Evaluation
-
-### Simple Agent Flow
-
-```text
-User request
-→ Agent understands intent
-→ Agent chooses tool
-→ Agent runs SQL / API / Python
-→ Agent summarizes result
-→ Agent logs output
-```
-
----
-
-## Phase 8 - Portfolio Projects
-
-Build projects that combine data engineering and AI.
-
-Recommended projects are documented in the `projects/` folder.
-
----
-
-## Phase 9 - Interview Preparation
-
-### Prepare Stories
-- Data pipeline architecture
-- Incremental load design
-- Databricks performance tuning
-- Data quality framework
+- Vector databases/search
 - RAG architecture
-- AI agent architecture
-- Production monitoring
+- Azure AI Search
+- Evaluation and guardrails
 
-### Use STAR Format
-- Situation
-- Task
-- Action
-- Result
+Practice:
+- Build document Q&A over PDFs/text files
+- Build RAG over project documentation
+- Store answers and citations
 
+---
+
+## Phase 7 — Agentic AI
+
+Goal: Learn how AI agents use tools and workflows.
+
+Learn:
+- What is an AI agent?
+- Tool calling
+- Planning and reasoning loop
+- Memory
+- Observability
+- Human approval
+- LangGraph or LangChain basics
+- Agent safety
+
+Practice:
+- Build an agent that reads a question, decides which tool to use, runs SQL or Python, and returns an answer
+
+---
+
+## Phase 8 — Portfolio + Interview Prep
+
+Goal: Convert learning into career proof.
+
+Build:
+- AI-ready data pipeline
+- RAG app
+- Databricks ML pipeline
+- Agentic AI workflow
+
+Prepare:
+- Resume stories
+- Architecture diagrams
+- STAR answers
+- System design explanations
+- SQL/Python coding practice
