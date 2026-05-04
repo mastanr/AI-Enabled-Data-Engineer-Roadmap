@@ -18,6 +18,25 @@ The goal is simple:
 
 ---
 
+## ⚠️ External Resource and License Safety Notice
+
+This repository is an independent learning roadmap.
+
+It includes original learning guidance and links to public resources such as MIT OpenCourseWare, Microsoft Learn, Google Machine Learning Crash Course, Kaggle, Databricks, OpenAI, and other official documentation.
+
+This repository does **not** copy, host, or redistribute external course materials such as lecture slides, videos, PDFs, exams, assignments, solution files, logos, or copyrighted images.
+
+All external resources belong to their respective owners and are governed by their own license terms.
+
+Useful safety files:
+
+- [Attribution and External Resource Usage](ATTRIBUTION.md)
+- [License Notes](LICENSE_NOTES.md)
+- [Disclaimer](DISCLAIMER.md)
+- [MIT OCW Safe References](resources/MIT_OCW_SAFE_REFERENCES.md)
+
+---
+
 ## 🎯 Who Is This Roadmap For?
 
 This roadmap is useful if you are:
@@ -75,6 +94,7 @@ Python
 - [24 Week Study Plan](#-24-week-study-plan)
 - [Project Ideas](#-project-ideas)
 - [Useful Learning Links](#-useful-learning-links)
+- [External Resource and Attribution Policy](#-external-resource-and-attribution-policy)
 - [Repository Structure](#-repository-structure)
 - [How to Use This Repo](#-how-to-use-this-repo)
 
@@ -709,6 +729,60 @@ Main learning resources are maintained here:
 
 ---
 
+# 🛡️ External Resource and Attribution Policy
+
+This roadmap is safe to keep public because it follows this rule:
+
+```text
+Original explanation + external learning link = OK
+Copied course material without permission = Not OK
+```
+
+## Safe Use
+
+You can safely add:
+
+- Your own notes
+- Your own examples
+- Your own SQL/Python practice
+- Links to official course/resource pages
+- Short descriptions of what to study
+
+## Avoid
+
+Do not upload or copy:
+
+- MIT OCW lecture PDFs or slides
+- Course videos
+- Full assignments or exams
+- Solution files
+- MIT logos, seals, or branding
+- Any external copyrighted material unless the license clearly allows it
+
+## Recommended Attribution
+
+When your notes are based on an external course, add a small reference section like this:
+
+```markdown
+## References
+
+This note was created in my own words after studying the following public learning resource:
+
+- Resource: [Resource Title](RESOURCE_URL)
+- Provider: Provider Name
+- License/terms: See the original resource page
+
+This repository does not host or redistribute the original course material.
+```
+
+More details:
+
+- [Attribution and External Resource Usage](ATTRIBUTION.md)
+- [License Notes](LICENSE_NOTES.md)
+- [MIT OCW Safe References](resources/MIT_OCW_SAFE_REFERENCES.md)
+
+---
+
 # 📁 Repository Structure
 
 ```text
@@ -730,10 +804,15 @@ AI-Enabled-Data-Engineer-Roadmap/
 │   └── PROJECT_IDEAS.md
 ├── resources/
 │   ├── LINKS.md
-│   └── FULL_LEARNING_LINKS.md
+│   ├── FULL_LEARNING_LINKS.md
+│   └── MIT_OCW_SAFE_REFERENCES.md
 ├── templates/
 │   ├── LEARNING_NOTE_TEMPLATE.md
-│   └── PROJECT_README_TEMPLATE.md
+│   ├── PROJECT_README_TEMPLATE.md
+│   └── SAFE_EXTERNAL_RESOURCE_NOTE_TEMPLATE.md
+├── ATTRIBUTION.md
+├── LICENSE_NOTES.md
+├── DISCLAIMER.md
 ├── notebooks/
 ├── assets/
 └── .gitignore
